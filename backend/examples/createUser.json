@@ -1,0 +1,44 @@
+{
+  "examples": [
+    {
+      "description": "Tạo người dùng với vai trò Quản lý dự án (qlda)",
+      "data": {
+        "ten": "Nguyễn Văn A",
+        "email": "qlda@example.com",
+        "matkhau": "123456",
+        "vaitro": "qlda"
+      }
+    },
+    {
+      "description": "Tạo người dùng với vai trò Kỹ thuật viên (ktv)",
+      "data": {
+        "ten": "Trần Thị B",
+        "email": "ktv@example.com",
+        "matkhau": "password123",
+        "vaitro": "ktv"
+      }
+    },
+    {
+      "description": "Tạo người dùng với vai trò Admin",
+      "data": {
+        "ten": "Lê Văn C",
+        "email": "admin@example.com",
+        "matkhau": "admin123",
+        "vaitro": "admin"
+      }
+    },
+    {
+      "description": "Tạo người dùng với vai trò khác",
+      "data": {
+        "ten": "Phạm Thị D",
+        "email": "user@example.com",
+        "matkhau": "user123",
+        "vaitro": "user"
+      }
+    }
+  ],
+  "curl_example_first_user": "curl -X POST http://localhost:3000/users \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n    \"ten\": \"Admin\",\n    \"email\": \"admin@example.com\",\n    \"matkhau\": \"admin123\",\n    \"vaitro\": \"admin\"\n  }'",
+  "curl_example_with_auth": "curl -X POST http://localhost:3000/users \\\n  -H 'Content-Type: application/json' \\\n  -H 'Authorization: Bearer YOUR_TOKEN' \\\n  -d '{\n    \"ten\": \"Nguyễn Văn A\",\n    \"email\": \"qlda@example.com\",\n    \"matkhau\": \"123456\",\n    \"vaitro\": \"qlda\"\n  }'",
+  "note": "Tất cả các trường (ten, email, matkhau, vaitro) đều là bắt buộc. Email phải là duy nhất trong hệ thống. Nếu chưa có user nào trong database, bạn có thể tạo user đầu tiên mà không cần token. Sau khi đã có user, chỉ admin mới có thể tạo user mới và cần token trong header."
+}
+

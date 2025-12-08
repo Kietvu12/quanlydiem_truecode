@@ -1,0 +1,83 @@
+[
+  {
+    "macot": "COT-001",
+    "tencot": "Cột Rooftop 15m",
+    "vitri": "Trên mái",
+    "cao": 15,
+    "giadonvi": 10,
+    "mota": "Cột lắp đặt trên mái nhà, chiều cao 15m"
+  },
+  {
+    "macot": "COT-002",
+    "tencot": "Cột Greenfield 30m",
+    "vitri": "Dưới đất",
+    "cao": 30,
+    "giadonvi": 10,
+    "mota": "Cột lắp đặt dưới đất, chiều cao 30m"
+  },
+  {
+    "macot": "COT-003",
+    "tencot": "Cột Greenfield 24m",
+    "vitri": "Dưới đất",
+    "cao": 24,
+    "giadonvi": 10,
+    "mota": "Cột lắp đặt dưới đất, chiều cao 24m"
+  },
+  {
+    "macot": "COT-004",
+    "tencot": "Cột Rooftop 12m",
+    "vitri": "Trên mái",
+    "cao": 12,
+    "giadonvi": 10,
+    "mota": "Cột lắp đặt trên mái nhà, chiều cao 12m"
+  },
+  {
+    "macot": "COT-005",
+    "tencot": "Cột Greenfield 18m",
+    "vitri": "Dưới đất",
+    "cao": 18,
+    "giadonvi": 10,
+    "mota": "Cột lắp đặt dưới đất, chiều cao 18m"
+  },
+  {
+    "macot": "COT-006",
+    "tencot": "Cột Nguy Trang 20m",
+    "vitri": "Dưới đất",
+    "cao": 20,
+    "giadonvi": 10,
+    "mota": "Cột nguy trang, chiều cao 20m"
+  },
+  {
+    "macot": "COT-007",
+    "tencot": "Cột Phòng Máy 15m",
+    "vitri": "Dưới đất",
+    "cao": 15,
+    "giadonvi": 10,
+    "mota": "Cột có phòng máy, chiều cao 15m"
+  },
+  {
+    "macot": "COT-008",
+    "tencot": "Cột Rooftop 18m",
+    "vitri": "Trên mái",
+    "cao": 18,
+    "giadonvi": 10,
+    "mota": "Cột lắp đặt trên mái nhà, chiều cao 18m"
+  },
+  {
+    "macot": "COT-009",
+    "tencot": "Cột Greenfield 36m",
+    "vitri": "Dưới đất",
+    "cao": 36,
+    "giadonvi": 10,
+    "mota": "Cột lắp đặt dưới đất, chiều cao 36m"
+  },
+  {
+    "macot": "COT-010",
+    "tencot": "Cột Rooftop 20m",
+    "vitri": "Trên mái",
+    "cao": 20,
+    "giadonvi": 10,
+    "mota": "Cột lắp đặt trên mái nhà, chiều cao 20m"
+  }
+]
+

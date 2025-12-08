@@ -1,0 +1,138 @@
+[
+  {
+    "ma": "AGG",
+    "ten": "An Giang"
+  },
+  {
+    "ma": "BNH",
+    "ten": "Bắc Ninh"
+  },
+  {
+    "ma": "CBG",
+    "ten": "Cao Bằng"
+  },
+  {
+    "ma": "CMU",
+    "ten": "Cà Mau"
+  },
+  {
+    "ma": "CTO",
+    "ten": "Cần Thơ"
+  },
+  {
+    "ma": "DBN",
+    "ten": "Điện Biên"
+  },
+  {
+    "ma": "DLK",
+    "ten": "Đắk Lắk"
+  },
+  {
+    "ma": "DNG",
+    "ten": "Đà Nẵng"
+  },
+  {
+    "ma": "DNI",
+    "ten": "Đồng Nai"
+  },
+  {
+    "ma": "DTP",
+    "ten": "Đồng Tháp"
+  },
+  {
+    "ma": "GLI",
+    "ten": "Gia Lai"
+  },
+  {
+    "ma": "HCM",
+    "ten": "TP. Hồ Chí Minh"
+  },
+  {
+    "ma": "HNI",
+    "ten": "Hà Nội"
+  },
+  {
+    "ma": "HPG",
+    "ten": "Hải Phòng"
+  },
+  {
+    "ma": "HTH",
+    "ten": "Hà Tĩnh"
+  },
+  {
+    "ma": "HYN",
+    "ten": "Hưng Yên"
+  },
+  {
+    "ma": "KHA",
+    "ten": "Khánh Hòa"
+  },
+  {
+    "ma": "LCI",
+    "ten": "Lào Cai"
+  },
+  {
+    "ma": "LCU",
+    "ten": "Lai Châu"
+  },
+  {
+    "ma": "LDG",
+    "ten": "Lâm Đồng"
+  },
+  {
+    "ma": "LSN",
+    "ten": "Lạng Sơn"
+  },
+  {
+    "ma": "NAN",
+    "ten": "Nghệ An"
+  },
+  {
+    "ma": "NBH",
+    "ten": "Ninh Bình"
+  },
+  {
+    "ma": "PTO",
+    "ten": "Phú Thọ"
+  },
+  {
+    "ma": "QNH",
+    "ten": "Quảng Ninh"
+  },
+  {
+    "ma": "QNI",
+    "ten": "Quảng Ngãi"
+  },
+  {
+    "ma": "QTI",
+    "ten": "Quảng Trị"
+  },
+  {
+    "ma": "SLA",
+    "ten": "Sơn La"
+  },
+  {
+    "ma": "THA",
+    "ten": "Thanh Hóa"
+  },
+  {
+    "ma": "TNH",
+    "ten": "Tây Ninh"
+  },
+  {
+    "ma": "TNN",
+    "ten": "Thái Nguyên"
+  },
+  {
+    "ma": "TQG",
+    "ten": "Tuyên Quang"
+  },
+  {
+    "ma": "TTH",
+    "ten": "Thừa Thiên Huế"
+  },
+  {
+    "ma": "VLG",
+    "ten": "Vĩnh Long"
+  }
+]
