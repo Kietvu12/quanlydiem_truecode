@@ -10,12 +10,14 @@ import ChenhLech from './pages/Admin/ChenhLech.jsx';
 import Reports from './pages/Admin/Reports.jsx';
 import Columns from './pages/Admin/Columns.jsx';
 import VolumeOther from './pages/Admin/VolumeOther.jsx';
+import ContractVolume from './pages/Admin/ContractVolume.jsx';
 import KhuVuc from './pages/Admin/KhuVuc.jsx';
 import TinhThanh from './pages/Admin/TinhThanh.jsx';
 import Duan from './pages/Admin/Duan.jsx';
 import Users from './pages/Admin/Users.jsx';
 import Profile from './pages/Profile.jsx';
 import HopDongCanKhaoSat from './pages/KTV/HopDongCanKhaoSat.jsx';
+import KhaoSatChiTiet from './pages/KTV/KhaoSatChiTiet.jsx';
 import LichSuKhaoSat from './pages/KTV/LichSuKhaoSat.jsx';
 
 // Protected Route Component
@@ -54,6 +56,7 @@ function App() {
           <Route path="/reports" element={<Reports />} />
           <Route path="/columns" element={<Columns />} />
           <Route path="/volume-other" element={<VolumeOther />} />
+          <Route path="/contract-volume" element={<ContractVolume />} />
           <Route path="/khuvuc" element={<KhuVuc />} />
           <Route path="/tinhthanh" element={<TinhThanh />} />
           <Route path="/duan" element={<Duan />} />
@@ -61,6 +64,7 @@ function App() {
           
           {/* KTV Pages */}
           <Route path="/hopdong-can-khaosat" element={<HopDongCanKhaoSat />} />
+          <Route path="/khaosat-chitiet/:tiendoId" element={<KhaoSatChiTiet />} />
           <Route path="/lichsu-khaosat" element={<LichSuKhaoSat />} />
           
           {/* Common Pages */}

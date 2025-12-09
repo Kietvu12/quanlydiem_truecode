@@ -9,9 +9,9 @@ const KhuVuc = () => {
   const [showModal, setShowModal] = useState(false);
   const [editingKhuVuc, setEditingKhuVuc] = useState(null);
   const [formData, setFormData] = useState({
-    ma_khu_vuc: '',
-    ten_khu_vuc: '',
-    mo_ta: ''
+    ma: '',
+    ten: '',
+    mota: ''
   });
 
   useEffect(() => {
@@ -34,9 +34,9 @@ const KhuVuc = () => {
   const handleCreate = () => {
     setEditingKhuVuc(null);
     setFormData({
-      ma_khu_vuc: '',
-      ten_khu_vuc: '',
-      mo_ta: ''
+      ma: '',
+      ten: '',
+      mota: ''
     });
     setShowModal(true);
   };
@@ -44,9 +44,9 @@ const KhuVuc = () => {
   const handleEdit = (khuVuc) => {
     setEditingKhuVuc(khuVuc);
     setFormData({
-      ma_khu_vuc: khuVuc.ma_khu_vuc || '',
-      ten_khu_vuc: khuVuc.ten_khu_vuc || '',
-      mo_ta: khuVuc.mo_ta || ''
+      ma: khuVuc.ma || '',
+      ten: khuVuc.ten || '',
+      mota: khuVuc.mota || ''
     });
     setShowModal(true);
   };
@@ -83,8 +83,8 @@ const KhuVuc = () => {
   };
 
   const filteredKhuVuc = khuVucList.filter(kv =>
-    kv.ma_khu_vuc?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    kv.ten_khu_vuc?.toLowerCase().includes(searchTerm.toLowerCase())
+    kv.ma?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    kv.ten?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -145,13 +145,13 @@ const KhuVuc = () => {
                 {filteredKhuVuc.map((kv) => (
                   <tr key={kv.id} className="hover:bg-gray-50">
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      {kv.ma_khu_vuc}
+                      {kv.ma}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                      {kv.ten_khu_vuc}
+                      {kv.ten}
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-600">
-                      {kv.mo_ta || '-'}
+                      {kv.mota || '-'}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                       <button
@@ -187,8 +187,8 @@ const KhuVuc = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Mã khu vực *</label>
                 <input
                   type="text"
-                  value={formData.ma_khu_vuc}
-                  onChange={(e) => setFormData({ ...formData, ma_khu_vuc: e.target.value })}
+                  value={formData.ma}
+                  onChange={(e) => setFormData({ ...formData, ma: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                   required
                 />
@@ -197,8 +197,8 @@ const KhuVuc = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Tên khu vực *</label>
                 <input
                   type="text"
-                  value={formData.ten_khu_vuc}
-                  onChange={(e) => setFormData({ ...formData, ten_khu_vuc: e.target.value })}
+                  value={formData.ten}
+                  onChange={(e) => setFormData({ ...formData, ten: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                   required
                 />
@@ -206,8 +206,8 @@ const KhuVuc = () => {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Mô tả</label>
                 <textarea
-                  value={formData.mo_ta}
-                  onChange={(e) => setFormData({ ...formData, mo_ta: e.target.value })}
+                  value={formData.mota}
+                  onChange={(e) => setFormData({ ...formData, mota: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                   rows="3"
                 />

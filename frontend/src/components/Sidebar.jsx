@@ -122,7 +122,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, isMobileOpen, onMobileClose }) =
   const navigation = isAdmin ? adminNavigation : ktvNavigation;
 
   // Kiểm tra xem có đang ở trang volume không
-  const isVolumePage = location.pathname === '/columns' || location.pathname === '/volume-other';
+  const isVolumePage = location.pathname === '/columns' || location.pathname === '/volume-other' || location.pathname === '/contract-volume';
   
   // Kiểm tra xem có đang ở trang quản lý hệ thống không
   const isSystemPage = [
@@ -344,6 +344,20 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, isMobileOpen, onMobileClose }) =
                   >
                     <div className="w-2 h-2 rounded-full bg-gray-400"></div>
                     <span className="text-sm">Thư viện volume khác</span>
+                  </Link>
+                  <Link
+                    to="/contract-volume"
+                    onClick={onMobileClose}
+                    className={`
+                      flex items-center gap-3 px-4 py-2 rounded-lg transition-colors
+                      ${location.pathname === '/contract-volume'
+                        ? 'bg-gray-100 text-black font-semibold'
+                        : 'text-gray-500 hover:bg-gray-200'
+                      }
+                    `}
+                  >
+                    <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                    <span className="text-sm">Volume hợp đồng</span>
                   </Link>
                 </div>
               )}

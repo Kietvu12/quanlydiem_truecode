@@ -96,7 +96,7 @@ const TinhThanh = () => {
   const filteredTinhThanh = tinhThanhList.filter(tt =>
     tt.ma?.toLowerCase().includes(searchTerm.toLowerCase()) ||
     tt.ten?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    tt.khuvuc?.ten_khu_vuc?.toLowerCase().includes(searchTerm.toLowerCase())
+    tt.khuvuc?.ten?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -163,7 +163,7 @@ const TinhThanh = () => {
                       {tt.ten}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                      {tt.khuvuc?.ten_khu_vuc || 'N/A'}
+                      {tt.khuvuc?.ten || 'N/A'}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                       <button
@@ -206,7 +206,7 @@ const TinhThanh = () => {
                   <option value="">Chọn khu vực</option>
                   {khuVucList.map((kv) => (
                     <option key={kv.id} value={kv.id}>
-                      {kv.ten_khu_vuc}
+                      {kv.ten}
                     </option>
                   ))}
                 </select>

@@ -9,9 +9,9 @@ const Duan = () => {
   const [showModal, setShowModal] = useState(false);
   const [editingDuan, setEditingDuan] = useState(null);
   const [formData, setFormData] = useState({
-    ma_du_an: '',
-    ten_du_an: '',
-    mo_ta: ''
+    maduan: '',
+    tenduan: '',
+    mota: ''
   });
 
   useEffect(() => {
@@ -34,9 +34,9 @@ const Duan = () => {
   const handleCreate = () => {
     setEditingDuan(null);
     setFormData({
-      ma_du_an: '',
-      ten_du_an: '',
-      mo_ta: ''
+      maduan: '',
+      tenduan: '',
+      mota: ''
     });
     setShowModal(true);
   };
@@ -44,9 +44,9 @@ const Duan = () => {
   const handleEdit = (duan) => {
     setEditingDuan(duan);
     setFormData({
-      ma_du_an: duan.ma_du_an || '',
-      ten_du_an: duan.ten_du_an || '',
-      mo_ta: duan.mo_ta || ''
+      maduan: duan.maduan || '',
+      tenduan: duan.tenduan || '',
+      mota: duan.mota || ''
     });
     setShowModal(true);
   };
@@ -83,8 +83,8 @@ const Duan = () => {
   };
 
   const filteredDuan = duanList.filter(duan =>
-    duan.ma_du_an?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    duan.ten_du_an?.toLowerCase().includes(searchTerm.toLowerCase())
+    duan.maduan?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    duan.tenduan?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -145,13 +145,13 @@ const Duan = () => {
                 {filteredDuan.map((duan) => (
                   <tr key={duan.id} className="hover:bg-gray-50">
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      {duan.ma_du_an}
+                      {duan.maduan}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                      {duan.ten_du_an}
+                      {duan.tenduan}
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-600">
-                      {duan.mo_ta || '-'}
+                      {duan.mota || '-'}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                       <button
@@ -187,8 +187,8 @@ const Duan = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Mã dự án *</label>
                 <input
                   type="text"
-                  value={formData.ma_du_an}
-                  onChange={(e) => setFormData({ ...formData, ma_du_an: e.target.value })}
+                  value={formData.maduan}
+                  onChange={(e) => setFormData({ ...formData, maduan: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                   required
                 />
@@ -197,8 +197,8 @@ const Duan = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Tên dự án *</label>
                 <input
                   type="text"
-                  value={formData.ten_du_an}
-                  onChange={(e) => setFormData({ ...formData, ten_du_an: e.target.value })}
+                  value={formData.tenduan}
+                  onChange={(e) => setFormData({ ...formData, tenduan: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                   required
                 />
@@ -206,8 +206,8 @@ const Duan = () => {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Mô tả</label>
                 <textarea
-                  value={formData.mo_ta}
-                  onChange={(e) => setFormData({ ...formData, mo_ta: e.target.value })}
+                  value={formData.mota}
+                  onChange={(e) => setFormData({ ...formData, mota: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                   rows="3"
                 />

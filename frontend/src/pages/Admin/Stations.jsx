@@ -241,7 +241,7 @@ const Stations = () => {
                   <option value="">Chọn tỉnh thành</option>
                   {tinhThanhList.map((tt) => (
                     <option key={tt.id} value={tt.id}>
-                      {tt.ten} ({tt.khuvuc?.ten_khu_vuc})
+                      {tt.ten} ({tt.khuvuc?.ten})
                     </option>
                   ))}
                 </select>
